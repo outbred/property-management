@@ -12,8 +12,7 @@ namespace Praedium
             WpfDispatcher.Initialize(Dispatcher.CurrentDispatcher);
             oops.Globals.Dispatcher = Injector.GetSingleton<WpfDispatcher>();
             Injector.Register<IDispatcher, WpfDispatcher>();
-            NavigationService.Register<LandingViewModel, LandingView>();
-            NavigationService.Register<EvaluatePropertyViewModel, EvaluatePropertyView>();
+            NavigationService.ViewAssemblyNamePrefix = "Praedium";
         }
     }
 }
