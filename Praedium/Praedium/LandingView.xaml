@@ -1,0 +1,18 @@
+﻿<Page x:Class="Praedium.LandingView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Praedium"
+      xmlns:viewModels="clr-namespace:Praedium.ViewModels;assembly=Praedium.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      d:DataContext="{d:DesignInstance viewModels:LandingViewModel, IsDesignTimeCreatable=True}"
+      Title="LandingView">
+
+    <WrapPanel Orientation="Horizontal">
+        <Button Command="{Binding OnEvaluateProperty}" Content="Evaluate Property" MinHeight="200" MinWidth="200" />
+        <Button Command="{Binding OnManageRenters}" Content="Manage Renters" MinHeight="200" MinWidth="200" />
+        <Button Command="{Binding OnManageProperties}" Content="Manage Properties" MinHeight="200" MinWidth="200" />
+    </WrapPanel>
+</Page>

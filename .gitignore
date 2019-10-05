@@ -3,3 +3,9 @@
 ################################################################################
 
 /Praedium/.vs/Praedium
+/Praedium/Praedium/bin/Debug/netcoreapp3.0
+/Praedium/Praedium/obj
+/Praedium/Praedium.Services/bin/Debug/netstandard2.0
+/Praedium/Praedium.Services/obj
+/Praedium/Praedium.ViewModels/bin/Debug/netstandard2.0
+/Praedium/Praedium.ViewModels/obj
